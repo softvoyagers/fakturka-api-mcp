@@ -8,6 +8,8 @@ Integrate **[Faktuj](https://faktuj.pl)** into Claude, Cursor, VS Code, and any 
 
 No API key required. Free forever.
 
+[![fakturka-api-mcp MCP server](https://glama.ai/mcp/servers/softvoyagers/fakturka-api-mcp/badges/card.svg)](https://glama.ai/mcp/servers/softvoyagers/fakturka-api-mcp)
+
 ## Quick Start
 
 Add to your `claude_desktop_config.json`:
