@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.dpozimski/faktuj",
+  "description": "MCP server for Faktuj — generate Polish VAT invoices (Faktury VAT) with full legal compliance from any MCP-compatible AI assistant. Supports buyer/seller data, line items, tax calculations, and PDF export. Free, no API key required.",
+  "repository": {
+    "url": "https://github.com/softvoyagers/fakturka-api-mcp",
+    "source": "github"
+  },
+  "version": "1.3.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "faktuj-mcp",
+      "version": "1.3.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
