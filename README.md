@@ -4,7 +4,7 @@
 [![Website](https://img.shields.io/badge/website-faktuj.pl-ff00aa)](https://faktuj.pl)
 [![API Status](https://img.shields.io/badge/API-online-39ff14)](https://faktuj.pl/health)
 
-Integrate **[Faktuj](https://faktuj.pl)** into Claude, Cursor, VS Code, and any MCP-compatible AI assistant. Generate Polish VAT invoices, proforma invoices, look up companies by NIP, check NBP exchange rates, and validate IBAN numbers — all from your AI workflow.
+Integrate **[Faktuj](https://faktuj.pl)** into Claude, Cursor, VS Code, and any MCP-compatible AI assistant. Generate [VAT invoices](https://faktuj.pl/faktura-vat) and [proforma invoices](https://faktuj.pl/faktura-proforma), look up companies by NIP, check NBP exchange rates, and validate IBAN numbers — all from your AI workflow. Fully aligned with [KSeF compliance](https://faktuj.pl/ksef) requirements.
 
 No API key required. Free forever.
 
@@ -45,8 +45,8 @@ Then add to your config:
 
 | Tool | Description |
 |------|-------------|
-| `generate_invoice` | Generate a Polish VAT invoice PDF. Pass full invoice JSON with seller, buyer, and line items. Returns invoice number and base64 PDF. |
-| `generate_proforma` | Generate a proforma invoice PDF. Same schema as VAT invoice. Returns invoice number and base64 PDF. |
+| `generate_invoice` | Generate a Polish [VAT invoice](https://faktuj.pl/faktura-vat) PDF. Pass full invoice JSON with seller, buyer, and line items. Returns invoice number and base64 PDF. |
+| `generate_proforma` | Generate a [proforma invoice](https://faktuj.pl/faktura-proforma) PDF. Same schema as VAT invoice. Returns invoice number and base64 PDF. |
 | `preview_invoice` | Preview and validate invoice data without generating a PDF. Returns validated data or validation errors. |
 | `lookup_nip` | Look up a Polish company by NIP tax identification number. Returns company name, address, and registration data. |
 | `lookup_nbp_rate` | Look up NBP (National Bank of Poland) exchange rate for a given currency and date. |
@@ -75,6 +75,14 @@ This is a thin stdio MCP transport layer over the [Faktuj REST API](https://fakt
 |---------------------|---------|-------------|
 | `FAKTUJ_API_URL` | `https://faktuj.pl` | Base URL for the Faktuj API |
 
+## Resources
+
+- [VAT Invoice Guide](https://faktuj.pl/faktura-vat) — How to create a compliant Polish VAT invoice
+- [Proforma Invoice Guide](https://faktuj.pl/faktura-proforma) — When and how to use proforma invoices
+- [KSeF Compliance](https://faktuj.pl/ksef) — Poland's National e-Invoicing System requirements
+- [Blog](https://faktuj.pl/blog) — Invoicing guides, tax tips, and product updates
+- [API Documentation](https://faktuj.pl/docs) — Full REST API reference
+
 ## SoftVoyagers Ecosystem
 
 Faktuj is part of the [SoftVoyagers](https://github.com/softvoyagers) open-source portfolio:
@@ -89,6 +97,7 @@ Faktuj is part of the [SoftVoyagers](https://github.com/softvoyagers) open-sourc
 | **Faktuj** | Free Polish VAT invoice generator | [faktuj.pl](https://faktuj.pl) |
 | **QRMint** | Free styled QR code generator & API | [qrmint.dev](https://qrmint.dev) |
 | **PageDrop** | Free instant HTML hosting API | [pagedrop.dev](https://pagedrop.dev) |
+| **PismoSzyteNaMiarę** | Darmowy generator pism urzędowych | [pismoszytenamiare.pl](https://pismoszytenamiare.pl) |
 
 ## License
 
